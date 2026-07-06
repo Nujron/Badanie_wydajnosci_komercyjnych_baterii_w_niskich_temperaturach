@@ -1,0 +1,6 @@
+# highest_setpoint = 300 K
+# lowest_setpoint = 150 K
+# ramp_rate = 0.4 K/min
+# date = 2025-11-06 K/min
+# t0 = 7 min
+TemperatureA,TemperatureB,Voltage,Current,Setpoint,pwr,mnumber,Time
