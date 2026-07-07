@@ -498,36 +498,3 @@ class meas_data:
         self.Batt_Power = self.Batt_Power[mask]
         self.Setpoint = self.Setpoint[mask]   
     
-
-    
-# def plot_T_t_fragment(self, fig, axs, start, stop):        
-#     mask = (self.Measurement_Time > start) & (self.Measurement_Time < stop)
-#     axs[0].scatter(self.Measurement_Time[mask], self.Setpoint[mask], color= 'orange', s = 5*self.markersize, label = 'Setpoint')
-#     axs[0].scatter(self.Measurement_Time[mask], self.TemperatureB[mask], color= 'purple', s = self.markersize, label = 'Temperature of probe')
-#     axs[0].set_xlabel('Time [s]')
-#     axs[0].set_ylabel('Temperature B of probe')
-#     axs[0].tick_params(axis='x', labelrotation=45)
-#     axs[0].legend()
-    
-#     axs[1].scatter(self.Measurement_Time[mask], self.Setpoint[mask], color= 'orange', s= 5*self.markersize, label = 'Setpoint')
-#     axs[1].scatter(self.Measurement_Time[mask], self.TemperatureA[mask], color = 'purple', s= self.markersize, label = 'Temperature of battery')
-#     axs[1].set_xlabel('Time [s]')
-#     axs[1].set_ylabel('Temperature A of battery')
-#     axs[1].tick_params(axis='x', labelrotation=45)
-#     axs[1].legend()
-    
-    
-# def plot_VandI_t_fragment(self, fig, axs, start, stop):        
-#     mask = (self.Measurement_Time > start) & (self.Measurement_Time < stop)
-#     axs[0].scatter(self.Measurement_Time[mask], self.Voltage[mask], color= 'orange', s = 2*self.markersize, label = 'Voltage')
-#     axs[0].set_xlabel('Time [s]')
-#     axs[0].set_ylabel('Voltage [V]')
-#     axs[0].tick_params(axis='x', labelrotation=45)
-#     axs[0].legend()
-    
-#     axs[1].scatter(self.Measurement_Time[mask], self.Current[mask], color= 'orange', s= 2*self.markersize, label = 'Current')
-#     axs[1].set_xlabel('Time [s]')
-#     axs[1].set_ylabel('Current [A]')
-#     axs[1].tick_params(axis='x', labelrotation=45)
-#     axs[1].legend()
-
