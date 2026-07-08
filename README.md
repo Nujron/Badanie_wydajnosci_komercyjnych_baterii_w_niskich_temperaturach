@@ -1,10 +1,29 @@
 ﻿# Badanie wydajnosci komercyjnych baterii w niskich temperaturach
 ## Opis projektu
-Programy zamieszczone w niniejszym repozytorium zostały napisane na potrzeby anializy danych do mojej pracy inżynierskiej (plik Łukasz_Puchała-Projekt_dyplomowy.pdf), której abstrakt zamieszczam poniżej:
+Programy zamieszczone w niniejszym repozytorium zostały napisane na potrzeby analizy danych do mojej pracy inżynierskiej (plik `Łukasz_Puchała-Projekt_dyplomowy.pdf`), której abstrakt zamieszczam poniżej:
 
 Celem niniejszego projektu było zbadanie wydajności komercyjnie dostępnych baterii w warunkach obniżonej temperatury, ze szczególnym uwzględnieniem ich przydatności do zastosowań niskotemperaturowych istotnych m.in. dla zastosowań terenowych i naukowych. W tym celu zaprojektowano i uruchomiono stanowisko eksperymentalne umożliwiające kontrolowane pomiary parametrów pracy baterii w środowisku kriogenicznym. Układ pomiarowy oparto na naczyniu Dewara z ciekłym azotem oraz zanurzoną w nim sondą pomiarową; temperaturą sterowano za pomocą kontrolera PID, natomiast parametry elektryczne rejestrowano przy użyciu multimetrów uniwersalnych. Proces pomiarowy i akwizycja danych zostały w pełni skomputeryzowane. Po wstępnych testach metoda pomiarowa została zoptymalizowana pod względem sprzężenia termicznego pomiędzy baterią a otoczeniem kriogenicznym oraz czasu trwania pomiaru, co pozwoliło ograniczyć wpływ bezwładności cieplnej ogniw na uzyskiwane wyniki. Badaniom poddano zarówno ogniwa pierwotne, jak i wtórne; łącznie przebadano dziewięć komercyjnych baterii przy zastosowaniu jednolitej procedury pomiarowej. Na podstawie analizy charakterystyk temperaturowych stwierdzono, że najlepszą wydajnością niskotemperaturową cechują się ogniwa litowo--tytanowe, niklowo--kadmowe oraz alkaliczne, co pozwoliło wyznaczyć kierunki dalszych badań. Wskazano konieczność rozszerzenia analiz o inne typy baterii litowych i akumulatorów litowo--polimerowych oraz o pomiary pojemności w wybranych temperaturach charakterystycznych. W ramach pracy przeanalizowano również występowanie przejść fazowych podczas procesów chłodzenia i ogrzewania jednego z~ogniw.
 
 ## Programy wykorzystane do analizy danych
-Programy battery00.py, battery01.py oraz battery_bib.py służą do komunikacji z urządzeniami pomiarowymi, kontroli pomiaru i akwizycji danych. Końcówki 00 i 01 oznaczją różne tryby działania programu z różnymi przebiegami temperatury od czasu. Plik battery_bib.py zawiera klasy i funkcje wykorzystywane do działania dwóch pierwszych programów.
 
-Program plot_bib.py zawiera klasę pozwalającą obliczyć podstawowe parametry niskotemperaturowe baterii. Dodatkowo klasa zawiera metody, które mogą być wykorzystane do przedstawienia wyników. Jej przykładowe wykorzystanie można zobaczyć w notebooku plot.ipynb.
+Programy:
+
+- `battery00.py`
+- `battery01.py`
+- `battery_bib.py`
+
+służą do komunikacji z urządzeniami pomiarowymi, kontroli pomiaru oraz akwizycji danych.
+
+Końcówki `00` i `01` oznaczają różne tryby działania programów, wykorzystujące różne przebiegi temperatury w funkcji czasu.
+
+Plik `battery_bib.py` zawiera klasy i funkcje wykorzystywane przez dwa pierwsze programy.
+
+Program:
+
+- `plot_bib.py`
+
+zawiera klasę pozwalającą obliczyć podstawowe parametry niskotemperaturowe baterii. Dodatkowo klasa udostępnia metody umożliwiające przedstawienie wyników pomiarów.
+
+Przykładowe wykorzystanie programu można znaleźć w notebooku:
+
+- `plot.ipynb`
