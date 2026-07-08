@@ -7,4 +7,4 @@ Celem niniejszego projektu było zbadanie wydajności komercyjnie dostępnych ba
 ## Programy wykorzystane do analizy danych
 Programy battery00.py, battery01.py oraz battery_bib.py służą do komunikacji z urządzeniami pomiarowymi, kontroli pomiaru i akwizycji danych. Końcówki 00 i 01 oznaczją różne tryby działania programu z różnymi przebiegami temperatury od czasu. Plik battery_bib.py zawiera klasy i funkcje wykorzystywane do działania dwóch pierwszych programów.
 
-Program plot_bib.py zawiera klasę pozwalającą obliczyć podstawowe parametry niskotemperaturowe baterii. Dodatkowo klasa zawiera metody, które mogą być wykorzystane do przedstawienia wyników. Jej przykłądowe wykorzystanie można zobaczyć w notebooku plot.ipynb.
+Program plot_bib.py zawiera klasę pozwalającą obliczyć podstawowe parametry niskotemperaturowe baterii. Dodatkowo klasa zawiera metody, które mogą być wykorzystane do przedstawienia wyników. Jej przykładowe wykorzystanie można zobaczyć w notebooku plot.ipynb.
